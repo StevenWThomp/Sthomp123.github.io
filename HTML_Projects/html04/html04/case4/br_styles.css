@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Cameron Odom & Steven Thompson
+   Date: October 31, 2018
+	
+   Filename: br_styles.css
+
+*/
+/*Html & Body styles*/
+
+	html{
+		background-color:rgb(175, 146, 109);
+	}
+	
+	body{
+		background:url(br_paper.png);
+		width: 70%;
+		box-shadow: 10px 10px 10px, -10px 10px 10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+		
+/*header styles*/
+header {
+	background: linear-gradient(to left bottom, white 40%, rgb(181, 179, 171) 60%);
+	}
+	
+	header::after{
+		clear: both;
+		content: "";
+		display: table;
+	}
+	
+header img {
+		display:block;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+header nav ul li{
+	width:20%;
+	display:inline;
+	text-align:center;
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgb(96, 67, 38);
+}
+
+header nav ul li a{
+	color:white;
+}
+
+/*Aside styles*/
+
+
+aside.description {
+	background: radial-gradient(rgb(226, 223, 211) 30%, white 70%);
+	border: double 4px black;
+	border-radius: 10px;
+	padding-left: 5px;
+	float:left;
+	display:block;
+	width: 20%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+/* section styles */
+
+section p:first-of-type:first-letter {
+    margin-top: 10px;
+    text-shadow: black -2px -2px 1px;
+    font-family: "Time New Roman";
+    float: left;
+    font-size: 3em;
+    }
+    
+section p {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 110%;
+    
+}
+
+section:after{
+    clear: both;
+    content: "";
+    display: table;
+    }
+		
+/* article styles */
+
+article:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+article dl dd img{
+    display: block;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 16%;
+}
+/*article{
+    display:block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+article dl dd img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:30%;
+}
+
+article dl dt{
+    padding-top:20px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+article dl dt{
+    text-align:center;
+    width:20%;
+    background-color:rgb(96, 67, 38);
+    transform:  perspective(50px) rotateX(50deg);
+}
+
+*/
+

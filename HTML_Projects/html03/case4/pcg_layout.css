@@ -1,0 +1,150 @@
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Steven Thompson and Jeremy Snider
+   Date:   10/16/2018
+
+   Filename:         pcg_layout.css
+   Supporting Files: 
+
+*/ 
+   /* General Styles */
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+    /* Body Layout Styles */
+    
+body {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 640px;
+    max-width: 960px;
+}
+
+body > header > img {
+    display: block;
+    width: 100%;
+}
+
+body > header > nav ul {
+    list-style-type: none;
+}
+
+    /* headerNav list Items */
+nav#headerNav {
+    clear: both;
+}
+
+nav#headerNav::after{
+    clear: both;
+    content: "";
+    display: table;
+
+}
+
+body header nav#headerNav {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav#headerNav ul li a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 11.11%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+    /* Aside Layout Styles */
+
+nav#asideNav {
+    overflow: auto;
+    width: 11%;
+    height: 10%;
+    float: left;
+    padding-top: 3%;
+    padding-bottom: 20px;
+    padding-left: 3%;
+
+}
+
+nav#asideNav ul li {
+    list-style-type: none;
+}
+
+nav#asideNav ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+aside img {
+    margin-top: 5%;
+}
+    /* Section Layout Styles */
+section{
+    float: right;
+    width: 87%;
+    overflow: auto;
+}
+
+section::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section nav#storyLinks ul{
+    list-style-type: none;
+    margin-left: 40%;
+    margin-right: 25%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section nav#storyLinks ul li a{
+    text-decoration: none;
+}
+
+section dl dt{
+    text-align: center;
+}
+    /* Footer Styles */
+ 
+footer {
+    clear: both;
+    text-align: center;
+}
+
+footer nav ul{
+    list-style-type: none;
+    margin-left: 40%;
+}
+
+footer nav ul li a{
+    float: left;
+    text-decoration: none;
+    margin-left: 5%
+}
+footer nav::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+

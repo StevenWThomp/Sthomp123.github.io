@@ -1,0 +1,48 @@
+     
+     Chapter 02 Worksheet
+
+     
+     
+  1. Give an example of a binary number. (While a number such as ``1'' can be a
+     binary, decimal, and hexadecimal number, try coming up with an example that
+     better illustrates the differences between the different bases of numbers.)
+                1 0000
+  2. Give an example of a decimal number.
+                13
+  3. Give an example of a hexadecimal number.
+                F
+  4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
+                         1  2   4    8         16
+  5. What is a compiler?
+    A compiler takes the code typed in by the user and turns it into machine code.
+  6. What is source code?
+        source code is code that is typed in by the user
+  7. What is machine language? (Don't just say binary. That's not correct.)
+    Machine lanauge are the binary numbers representing instructions that the computer interprets
+  8. What is a first generation language? (Don't just say binary. That's not correct.)
+     The system of only using ones and zeros to represent numbers. This is also called the binary number system
+  9. What is a second generation language?
+     each command used a mnemonic, and a program called a compiler would change the mnemonics into the numbers that represented the commands. This is also called assembly language
+ 10. What is a third generation language? (Explain, don't just give one example.)
+     Third generation languages made it a lot easier to program and allowed for higher-level abstractions.
+ 11. What is an interpreter and how does it differ from a compiler?
+     interpreters are programs that look at source code and interpret it to machine language instructions on the fly. These can work on any type of machine, while a while that is configured on a Windows computer would not work on Apple or Linux computers. 
+ 12. Search the web and find some of the most popular programming languages.
+     List the website(s) you got the information from and what the languages are.
+     java, python, C, Ruby, JavaScript, C#, PHP, Objective-C, SQL.
+     https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html
+ 13. Look at the job boards and see what languages people are looking for.
+     List the languages and the job board you looked at.
+     SQL, java, JavaScript, C#, C++, Python, PHP, Ruby on Rails, IOS/Swift
+     http://www.codingdojo.com/blog/9-most-in-demand-programming-languages-of-2016/
+ 14. What is the difference between the ``syntax'' and ``semantics'' of a
+     language?
+    Syntax refers to the strcture or form of the code that a programming langauge specifices but Semantics deal with the meaning assigned to the symbols, characters and words.
+ 15. Pick a piece of technology, other than a computer you use regularly. Briefly
+     describe the hardware and software that run on it.
+    My phone. It is a Samsung Galaxy J7 Prime.
+    It runs on Android 7.0 Nougat
+    Has a 13 megapixel camera in the back and an 8 megapixel camera in the front.
+    it has a 1080 x 1920 pixel display
+    and it runs off a Samsung exynos 7 Octa core processor.
+     

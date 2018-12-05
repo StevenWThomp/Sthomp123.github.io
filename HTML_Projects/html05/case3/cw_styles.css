@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 3
+   
+   Author:   
+   Date:      
+   
+   Filename: cw_styles.css
+
+   This file contains the screen styles used with the 
+   Cauli-Wood Gallery home page
+
+*/
+
+
+/* Import Basic Design Styles  */
+
+@import url("cw_designs.css");
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+nav#bottom {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+            
+    -webkit-box-flow: row nowrap;
+    -moz-box-flow: row nowrap;
+    -ms-flexbox-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    
+    justify-content: center;
+}
+
+nav#bottom ul {
+    -webkit-box: 0 1 150px;
+    -moz-box:  0 1 150px;
+    -ms-flexbox: 0 1 150px;
+    -webkit-flex: 0 1 150px;
+    flex: 0 1 150px;
+}
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+@media only screen and (max-width: 480px){
+    
+    body {
+        color: rgb(211, 211, 211);
+        background-color: rgb(51, 51, 51);
+    }
+    
+    article img, aside, section#spotlight {
+        display: none;
+    }
+    
+    nav#top ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    
+    nav#top ul li {
+        font-size: 2.2em;
+        
+        -webkit-box: 1 1 130px;
+        -moz-box:  1 1 130px;
+        -ms-flexbox: 1 1 130px;
+        -webkit-flex: 1 1 130px;
+        flex: 1 1 130px;
+    }
+    
+    nav#top ul li:nth-of-type(1) {
+        background: url(cw_image01.png) 100%/ cover no-repeat;
+    }
+    
+    nav#top ul li:nth-of-type(2) {
+        background: url(cw_image02.png) 100%/ cover no-repeat;
+    }
+    
+    nav#top ul li:nth-of-type(3) {
+        background: url(cw_image03.png) 100%/ cover no-repeat;
+    }
+    
+    nav#top ul li:nth-of-type(4) {
+        background: url(cw_image04.png) 100%/ cover no-repeat;
+    }
+    
+    nav#top ul li:nth-of-type(5) {
+        background: url(cw_image05.png) 100%/ cover no-repeat;
+    }
+    
+    nav#top ul li:nth-of-type(6) {
+        background: url(cw_image06.png) 100%/ cover no-repeat;
+    }
+    
+    p#links {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+                
+        -webkit-box-flow: row nowrap;
+        -moz-box-flow: row nowrap;
+        -ms-flexbox-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        
+        justify-content: space-around;
+    }
+    
+    p#links a {
+        color: white;
+        background-color: rgb(220, 27, 27);
+        border-radius: 20px;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width:481px) {
+    
+    body{   
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    
+    article {
+        -webkit-box: 2 1 400px;
+        -moz-box:  2 1 400px;
+        -ms-flexbox: 2 1 400px;
+        -webkit-flex: 2 1 400px;
+        flex: 2 1 400px;
+    }
+    
+    aside {
+        -webkit-box: 1 2 200px;
+        -moz-box:  1 2 200px;
+        -ms-flexbox: 1 2 200px;
+        -webkit-flex: 1 2 200px;
+        flex: 1 2 200px;
+    }
+    
+    nav#top ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+                
+        -webkit-box-flow: row nowrap;
+        -moz-box-flow: row nowrap;
+        -ms-flexbox-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap; 
+        
+        background-color: rgb(51, 51, 51);
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav#top ul li {
+        -webkit-box: 0 1 80px;
+        -moz-box:  0 1 80px;
+        -ms-flexbox: 0 1 80px;
+        -webkit-flex: 0 1 80px;
+        flex: 0 1 80px;
+    }
+    
+    p#links {
+        display: none;
+    }
+

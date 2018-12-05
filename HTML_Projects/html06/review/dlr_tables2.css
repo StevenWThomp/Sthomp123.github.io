@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Review Assignment
+
+   Tables Style Sheet
+   Author: Steven Thompson & Travis A 
+   Date:   November 20, 2018
+
+   Filename:         dlr_tables2.css
+
+*/
+
+/* Table Styles */
+
+    table.programs {
+        width: 100%;
+        border: 15px outset rgb(151, 151, 151);
+        border-collapse: collapse;
+        font-family: Arial, Verdana, Sans-serif;
+    }
+    
+    table.programs tr {
+        height: 25px;
+    }
+    
+    table.programs th, table.programs td{
+        border: 1px solid gray;
+        padding: 5px;
+        vertical-align: top;
+    }
+
+/* Table Caption Styles */
+
+    table.programs caption{
+        caption-side: bottom;
+        text-align: auto;
+    }
+
+/* Table Column Styles */
+
+    .timeColumn {
+        width: 10%;
+        background-color: rgb(215, 205, 151);
+    }
+    
+    .wDaysColumns{
+        width: 11%;
+        background-color: rgb(236, 255, 211);
+    }
+    
+    .wEndColumns{
+        width: 17%;
+        background-color: rgb(255, 231, 255);
+    }
+/* Table Header Styles */
+
+    table.programs thead {
+        color: white;
+        background-color: rgb(105, 177, 60);
+    }
+    
+    table.programs thead th:first-of-type{
+        background-color: rgb(153, 86, 7);
+    }
+    
+    table.programs thead th:nth-of-type(7), table.programs thead th:nth-of-type(8){
+        background-color: rgb(153, 0, 153);
+    }
+
+/* Table Footer Styles */
+
+
+    table.programs tfoot{
+        color: white;
+        background-color: black;
+    }
+
+
+
+

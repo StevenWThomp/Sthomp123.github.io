@@ -1,0 +1,91 @@
+     
+     Chapter 06 Worksheet
+
+     
+     For each of the first two questions, write out your best guess as to what the
+     code will print. Clearly label this as your guess. Then run the code and look at
+     the output. Write if your guess was correct. If it was not, briefly describe what
+     was different and why.
+
+     Predicting what the code will do is important in writing programs, and
+     figuring out why programs don't run the way expected.
+     
+  1. What does this program print out?
+     (Remember: TWO answers. Your guess and the actual result. Label both.)
+     
+     Guess: it is going to keep printing 0 on separate lines and never stop.
+     Answer: it printed 0,2,4,6,8 on separate lines and stopped but didn't print 10. I didn't see that x was reassigned at first.
+     x = 0
+     while x < 10:
+         print(x)
+         x = x + 2
+     
+  2. What does this program print out?
+     Guess: It will print 1,2,4,8,16,32 on separate lines.
+     Answer: It will print 1,2,4,8,16,32 on separate lines.
+     x = 1
+     while x < 64:
+         print(x)
+         x = x * 2
+     
+  3. Why is the and x >= 0 not needed?
+     This loop will never go below 0 so that makes it unnecessary to have a check for it going below 0.
+     x = 0
+     while x < 10 and x >= 0:
+         print(x)
+         x = x + 2
+     
+  4. What does this program print out? (0 pts) Explain. (1 pt)
+     It prints out 5,4,3,2,1,0 but never prints "Blast off!" because the if statement checks if 1 is a string.
+     x = 5
+     while x >= 0:
+         print(x)
+         if x == "1":
+             print("Blast off!")
+         x = x - 1
+     
+  5. Fix the following code so it doesn't repeat forever, and keeps asking
+     the user until he or she enters a number greater than zero: (2 pts)
+     
+     x = float(input("Enter a number greater than zero: "))
+
+     while x <= 0:
+         print("Too small. Enter a number greater than zero: ")
+         x = float(input("Enter a number greater than zero: "))
+     
+  6. Fix the following code:
+     
+     x = 10
+
+     while x > 0:
+         print(x)
+         x -= 1
+
+     print("Blast-off")
+     
+  7. What is wrong with this code? It runs but it has unnecessary code.
+     Find all the unneeded code. Also, answer why it is not needed. (1 pt)
+     
+     for i in range(10):
+         print(i)
+     The for loop sets i as a variable already so defining it outside of the for loop is pointless.
+  
+  8. Explain why the values printed for x are so different. (2 pts)
+        
+        # Sample 1
+        x = 0
+        for i in range(10):
+            x += 1
+        for j in range(10):
+            x += 1
+        print(x)
+
+        # Sample 2
+        x = 0
+        for i in range(10):
+            x += 1
+            for j in range(10):
+                x += 1
+        print(x)
+        
+        The printed values are different because in the second sample the for loop is nested. This causes it to run through every number between 10, 9 times. Whereas, since sample 1 does not have nested for loops, it just counts the numbers in the range of 10 twice and adds them together.  

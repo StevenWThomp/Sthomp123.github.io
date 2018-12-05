@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatSlideShowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_slide_show_welcome"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageButton
+            android:id="@+id/cat_picture_one"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="0dp"
+            android:src="@drawable/cat1"
+            android:scaleType="fitXY" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageButton
+            android:id="@+id/cat_picture_two"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="0dp"
+            android:src="@drawable/cat2"
+            android:scaleType="fitXY" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageButton
+            android:id="@+id/cat_picture_three"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="0dp"
+            android:src="@drawable/cat3"
+            android:scaleType="fitXY" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageButton
+            android:id="@+id/cat_picture_four"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="0dp"
+            android:src="@drawable/cat4"
+            android:scaleType="fitXY" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageButton
+            android:id="@+id/cat_picture_five"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="0dp"
+            android:src="@drawable/cat5"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</ScrollView>

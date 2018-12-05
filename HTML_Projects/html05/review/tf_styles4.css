@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author: Steven Thompson & James Allen
+   Date:  Nov 6, 2018
+      
+   Filename: tf_styles4.css
+
+   This file contains the screen styles used with the Trusted
+   Friends blog tips
+
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+
+@import url("tf_designs.css");
+
+
+
+/* General Flex Styles */
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+section#left {
+    -webkit-flex: 1 8 130px;
+    flex: 1 8 130px;
+}
+
+section#right {
+    -webkit-flex: 8 1 351px;
+    flex: 8 1 351px;
+}
+
+section.tips {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+section.tips article {
+    -webkit-flex: 2 1 351px;
+    flex: 2 1 351px;
+}
+
+section.tips aside {
+    -webkit-flex: 1 2 250px;
+    flex: 1 2 250px;
+}
+
+nav.horizontal ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;    
+}
+
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+	
+@media only screen and (max-width: 480px){
+    
+    nav.vertical ul{
+        display: -webkit-flex;
+        display: flex;
+        display: none;
+        height: 240px;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        
+    }
+    
+    section#left{
+        -webkit-order: 99;
+        order: 99;
+    }
+    
+    body footer{
+        -webkit-order: 100;
+        order: 100;
+    }
+    
+    nav.horizontal ul{
+        display: none;
+    }
+    
+    a#navicon{
+        display: block;
+    }
+    
+    a#navicon:hover+ul, nav.horizontal ul:hover{
+        display: block
+    }
+}
+
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px){
+    
+    nav.horizontal ul{
+        height: 160px;
+    }
+}
+

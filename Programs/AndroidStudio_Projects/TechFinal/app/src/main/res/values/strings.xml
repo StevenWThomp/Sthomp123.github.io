@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tech Final</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">My Pet Album</string>
+    <string name="nav_header_subtitle">MyPetAlbum@mypetalbum.com</string>
+    <string name="nav_header_desc">My Pet Album</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dog_pictures">Dog Slideshow</string>
+    <string name="cat_pictures">Cat Slideshow</string>
+    <string name="exit_fragment">Exit</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home</string>
+    <string name="home_greeting">Welcome to my Dog/Cat Slideshow!</string>
+    <string name="action_exit">Exit</string>
+    <string name="select_slide_show">Please select a slideshow on the side for cute animal pictures!</string>
+    <string name="select_exit">Alternatively, you can select the exit button on the side to quit.</string>
+    <string name="cat_slide_show_welcome">Welcome to my cat SlideShow!</string>
+    <string name="cat1_tooltip">Owen</string>
+    <string name="dog_slide_show_welcome">Welcome to my dog SlideShow!</string>
+    <string name="place_holder_name">Place Holder Name</string>
+    <string name="place_holder_desc">Place Holder Description</string>
+    <string name="ext_fragment">Exit</string>
+</resources>

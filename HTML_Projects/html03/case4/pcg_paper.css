@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Steven Thompson and Jeremy Snider
+   Date:   10/16/2018
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+
+*/
+        /* Body Styles */
+    html {
+        background-color: #393939;
+    }
+    
+    body {
+        background-color: gray;
+    }
+    
+    /* Header Styles */
+    header nav {
+        background-color: #BA5701;
+    }
+    
+    header nav a {
+        color: navy;
+    }
+    
+    header nav a:link, header nav a:visited {
+        color: black;
+    }
+    
+    header nav a:hover, header nav a:active {
+        color: #013CFE;
+    }
+    
+    /* Aside Styles */
+    aside nav a {
+        color: navy;
+    } 
+    
+    aside nav a:link, aside nav a:visited {
+        color: #9F0000;
+    }
+    
+    aside nav a:hover, aside nav a:active {
+        color: #FF4500;
+    }
+    
+    /* Section Styles */
+    section nav a {
+        color: navy;
+    } 
+    
+    section nav a:link, section nav a:visited {
+        color: #9F0000;
+    }
+    
+    section nav a:hover, section nav a:active {
+        color: #FF4500;
+    }
+    
+    section dt {
+        font-size: 1.3em;
+    }
+    
+    /* Footer Styles */
+    footer {
+        background-color: #EE7F2D;
+    }
+    
+    footer nav a {
+        color: navy;
+    }
+    
+    footer nav a:link, footer nav a:visited {
+        color: #0101C6;
+    }
+    
+    footer nav a:hover, footer nav a:active {
+        color: #1E90FF;
+    }

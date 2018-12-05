@@ -1,0 +1,40 @@
+ /*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Steven Thompson & Travis A
+   Date:  November 29, 2018
+
+   Filename:         hcc_columns.css
+   Supporting files: 
+
+*/
+ 
+ 
+   @media only screen and (min-width: 641px){
+        
+        article {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+            
+            -moz-column-gap: 40px;
+            -webkit-column-gap: 40px;
+            column-gap: 40px;
+            
+            -moz-column-rule: 2px solid gray;
+            -webkit-column-rule: 2px solid gray;
+            column-rule: 2px solid gray;
+            
+            widows: 3;
+            orphans: 3;
+        }   
+        
+        article h1 {
+            -moz-column-span: all;
+            -webkit-column-span: all;
+            column-span: all;
+        }
+    }

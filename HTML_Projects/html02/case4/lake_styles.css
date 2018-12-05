@@ -1,0 +1,169 @@
+﻿@charset "utf-8";
+@import "lake_layout.css";
+
+@font-face{	
+		font-family: Dobkin;
+		src: url("DobkinPlain.woff") format("woff"),
+		url("DobkinPlain.ttf") format("truetype");
+	}
+	
+@font-face{
+		font-family: Champagne;
+		src: url("cac_champagne.woff") format("woff"),
+		url("cac_champagne.ttf") format("truetype");
+	}
+	
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Steven Thompson and Josh Bentley
+   Date:   9/27/2018
+   
+   Filename: lake_styles.css
+
+*/
+/* Structural Styles */
+	
+	html{
+		background-color:rgb(184, 186, 87);
+	}
+	
+	body{
+		background-color:rgb(191, 135, 229);
+	}
+	
+	footer{
+		padding-top: 4px;	
+		padding-bottom: 4px;
+		text-align: center;
+		font-size: 0.8em;
+		color:white;
+		background-color: rgb(24, 27, 30);
+	}
+	
+	section#leftcol{
+		background-color: rgb(240, 240, 240);
+	}
+	
+/* Body Header Styles */
+
+	
+
+/* Navigation Styles */
+	
+	body > header > nav > ul > li a:link, body > header > nav  > ul > li a:visited {
+		text-decoration:none;
+		background-color: rgb(81, 0, 99);
+		color: white;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		transition: 0.2s;
+	}
+	
+	body > header > nav > ul > li a:hover, body > header > nav > ul > li a:active{
+		text-decoration:none;
+		background-color: rgb(197, 76, 224);
+		color: black;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		transition: 0.3s;
+	}
+
+/* Section Styles */
+	
+	/* left column section */
+	
+	section#leftcol p{
+		font-size: 1.25em;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	section#leftcol > h1:first-of-type{
+		padding-left: 15px;
+		font-weight: normal;
+		font-family: Champagne, cursive;
+		font-size: 5em;
+		margin: 0px;
+	}
+	
+	section#leftcol aside{
+		padding-left: 15px;
+		padding-right: 15px;
+		
+	}
+	
+	section#leftcol aside#notes{
+		background-color: rgb(234, 124, 124);
+	}
+	
+	section#leftcol aside#notes ul{
+		list-style: circle;
+	}
+	
+	section#leftcol aside#upcoming_events{
+		background-color: rgb(132, 113, 63);
+	}
+	
+	section#leftcol aside#upcoming_events h2{
+		font-family: Arial;
+		font-weight: normal;
+		font-size: 1.1em;
+	}
+	
+	section#leftcol aside#upcoming_events p{
+		font-size: 0.9em;
+	}
+	
+	section#leftcol aside h1{
+		font-size: 1.6em;
+		margin-top: 10px;
+		text-align:center;
+	}
+	
+	/* right column section */
+
+	section#rightcol h2{
+		font-family: Champagne, cursive;
+		font-weight: normal;
+	}
+	
+	section#rightcol ul{
+		list-style: none;
+	}
+	
+	section#rightcol ul > li a:link, section#rightcol ul > li a:visited {
+		text-decoration:none;
+		color:rgba(33, 33, 33, 55%);
+		transition: 0.2s;
+	}
+	
+	section#rightcol ul > li a:hover, section#rightcol ul > li a:active{
+		text-decoration:none;
+		color: white;
+		transition: 0,2s;
+	}
+	
+	section#rightcol blockquote:before{
+		content: "\0201C";
+		font-size: 1.4em;
+		font-weight: bold;
+		color: rgb(53, 10, 86);
+	}
+	
+	section#rightcol blockquote:after{
+		content: "\0201D";
+		font-size: 1.4em;
+		font-weight: bold;
+		color: rgb(53, 10, 86);
+	}
+	
+	section#rightcol blockquote{
+		font-size: 1.3em;
+		margin-left: 0px;
+		padding-top: 60px;
+		color: rgb(53, 10, 86);
+	}

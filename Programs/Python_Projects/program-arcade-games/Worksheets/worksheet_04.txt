@@ -1,0 +1,151 @@
+     
+     Chapter 04 Worksheet
+
+     
+     Reminder: Please use full sentences, capital letters, and proper grammar
+     where appropriate.
+     Don't create a loop that only loops once. That doesn't make sense.
+     Python runs the code once by default anyway. Avoid loops like this:
+     
+     for i in range(1):
+         # Do something.
+     
+     
+  1. Write a Python program that will use a for loop to print your name
+     10 times, and then the word ``Done'' at the end.
+
+for name in range(1,11):
+    print("Steven Thompson")
+print("Done")
+
+	 
+	 
+  2. Write a Python program that will use a for loop to print ``Red''
+     and then ``Gold'' 20 times. (Red Gold Red Gold Red Gold... all on separate lines.
+     Don't use \n.)
+
+    for word in range(1,21):
+        print("red gold")
+                    
+
+  3. Write a Python program that will use a for loop to print the even
+     numbers from 2 to 100, inclusive.
+
+    for even in range(2,101,2)
+        print("even")
+
+  4. Write a Python program that will use a while loop to count from
+     10 down to, and including, 0. Then print the words ``Blast off!'' Remember, use
+     a WHILE loop, don't use a FOR loop.
+
+    number = 11
+    while number != 0:
+        number = number -1
+        print(number)
+    print("Blast off!")
+
+  5. There are three things wrong with this program. List each. (3 pts)
+    1. x needs to = int(input())
+    2. you want to make the total += to x, not i.
+    3. The print statement should print the total, not "x"
+     print("This program takes three numbers and returns the sum.")
+     total = 0
+
+     for i in range(3):
+         x = input("Enter a number: ")
+         total = total + i
+     print("The total is:", x)
+     
+  6. Write a program that prints a random integer from 1 to 10 (inclusive).
+
+    import random
+    print(random.randint(1,10))
+
+  7. Write a program that prints a random floating point number somewhere between
+     1 and 10 (inclusive). Do not make the mistake of generating a random number from
+     0 to 10 instead of 1 to 10.
+
+    import random
+    number = random.randint(1,10)
+    print(float(number))
+
+  8. Write a Python program that will: (3 pts)
+     * Ask the user for seven numbers
+     * Print the total sum of the numbers
+     * Print the count of the positive entries, the number entries equal to zero,
+     and the number of negative entries. Use an if, elif, else chain, not just three
+     if statements.
+     
+total = 0
+count_positive = 0
+count_negative = 0
+zero = 0
+
+for i in range(7):
+    numbers = int(input("Enter your number: "))
+    total += numbers
+    if numbers <= -1:
+        count_negative += 1
+    elif numbers >= 1:
+        count_positive += 1
+    else:
+        zero += 1
+print("amount of negative numbers:", str(count_negative))
+print("amount of positive numbers:", str(count_positive))
+print("amount of times zero was entered:", str(zero))
+print("The sum of the numbers:", total)
+
+
+
+  9. Coin flip tosser: (4 pts)     
+     * Create a program that will print a random 0 or 1.
+     * Instead of 0 or 1, print heads or tails. Do this
+     using if statements. Don't select from a list, as shown in the chapter.
+     * Add a loop so that the program does this 50 times.
+     * Create a running total for the number of heads flipped, and the number of tails.
+
+import random
+total_heads = 0
+total_tails = 0
+for i in range(50):
+    random_number = random.randint(0,1)
+    if random_number == 1:
+        total_heads += 1
+        print("heads")
+    elif random_number == 0:
+        total_tails += 1
+        print("tails")
+print("Amount of times heads was flipped:", total_heads)
+print("Amount of times tails was flipped:", total_tails)
+
+     
+ 10. Write a program that plays rock, paper, scissors: (4 pts)
+     
+     * Create a program that randomly prints 0, 1, or 2.
+     * Expand the program so it randomly prints rock, paper, or scissors
+     using if statements. Don't select from a list, as shown in the chapter.
+     * Add to the program so it first asks the user their choice.
+     * (It will be easier if you have them enter 1, 2, or 3.)
+     * Add conditional statement to figure out who wins.
+
+import random
+random_number = random.randint(0,2)
+print("Press 0 to select rock")
+print("Press 1 to select paper")
+print("press 2 to select scissors")
+user_choice = int(input("Make your choice: "))
+if user_choice == 0 and random_number == 2:
+    print("The computer has chosen scissors. You Win!")
+elif user_choice == 0 and random_number == 1:
+    print("The computer has chosen paper. You lose :(")
+elif user_choice == 1 and random_number == 0:
+    print("The computer has chosen rock. You Win!")
+elif user_choice == 1 and random_number == 2:
+    print("The computer has chosen scissors. You lose :(")
+elif user_choice == 2 and random_number == 1:
+    print("The computer has chosen paper. You Win!")
+elif user_choice == 2 and random_number == 0:
+    print("The computer has chosen rock. You lose :(")
+elif user_choice == random_number:
+    print("It's a draw, the computer has picked the same thing as you.")
+     

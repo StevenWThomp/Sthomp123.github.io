@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   Steven Thompson & James Allen
+   Date:    November 12, 2018
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+/*          =============================================
+                Base styles used by All Screens
+            =============================================
+*/
+
+    html{
+        background: url("jb_back2.png") 100%/cover no-repeat;
+    }
+    
+    body {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        
+        display: block;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 800px;    
+    }
+    
+    body:after{
+        clear: both;
+        content:"";
+        display: table;
+    }
+
+    body header img#logo{
+        width: 60%;
+        padding-left: 20%;
+    }
+            
+    ul{
+        list-style-type: none;
+    }
+            
+    aside#services{
+        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: column wrap;
+        -moz-box-flow: column wrap;
+        -ms-flexbox: column wrap;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        
+        -webkit-box: 1 4 100px;
+        -moz-box: 1 4 100px;
+        -ms-flexbox: 1 4 100px;
+        -webkit-flex: 1 4 100px;
+        flex: 1 4 100px;
+        
+        -webkit-align-items: center;
+        align-items: center;
+        float: left;
+        
+    }
+    
+    /*body aside#services{
+        width: 20%;
+        float: left;
+        margin-right: 2%;
+    }*/
+    
+    section#description{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row wrap;
+        -moz-box-flow: row wrap;
+        -ms-flexbox: row wrap;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        
+        -webkit-box: 2 4 100px;
+        -moz-box: 2 4 100px;
+        -ms-flexbox: 2 4 100px;
+        -webkit-flex: 2 4 100px;
+        flex: 2 4 100px;
+        
+        -webkit-align-items: center;
+        align-items: center;
+        
+    }
+    
+    aside#slang{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: column wrap;
+        -moz-box-flow: column wrap;
+        -ms-flexbox: column wrap;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        
+        -webkit-box: 1 4 100px;
+        -moz-box: 1 4 100px;
+        -ms-flexbox: 1 4 100px;
+        -webkit-flex: 1 4 100px;
+        flex: 1 4 100px;
+        
+        -webkit-align-items: center;
+        align-items: center;
+        float: right;
+    }
+    
+    /*body section#description{
+        width: 52%;
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+    }*/
+    
+    
+/*          =============================================
+                MOBILE STYLES FOR DEVICE WIDTH <= 480PX
+            =============================================
+*/       
+@media only screen and (max-width: 480px){
+    
+    body footer{
+        order: 100;
+    }
+    
+    nav#horizontal ul{
+        display:none;
+    }
+    
+    a#navicon{
+        display: block;
+    }
+    
+    a#navicon:hover+ul, nav#horizontal ul:hover{
+        display: block;
+    }
+    
+    aside#slang, aside#services{
+        display: none;
+    }
+}
+
+
+/*          =============================================
+                DESKTOP STYLES FOR DEVICE WIDTH >= 481PX
+            =============================================
+*/       
+@media only screen and (min-width: 481px){
+    
+    a#navicon{
+        display: none;
+    }
+    
+    body nav#horizontal ul{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-box-flow: row nowrap;
+        -moz-box-flow: row nowrap;
+        -ms-flexbox: row nowrap;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;   
+        height: 40px;
+        
+    }
+    
+    body nav#horizontal ul li{
+        -webkit-box: 1 1 auto;
+        -moz-box: 1 1 auto;
+        -ms-flexbox: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    
+    body aside#slang{
+        width: 20%;
+        float: right;
+        margin-left: 2%;
+    }
+    
+    body aside#slang h1{
+        text-align: center;
+    }
+    
+    body aside#services h1{
+        text-align: center;
+    }
+    
+    body aside#services ul{
+        padding-right: 15px;
+    }
+    
+    body aside#slang ul{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    body aside#slang ul p{
+        text-align: center;
+    }
+    
+}
+    
+
+

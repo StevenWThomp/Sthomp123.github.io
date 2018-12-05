@@ -1,0 +1,67 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Steven Thompson & Travis A
+   Date:  November 28, 2018
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+
+            /* Basic styles */
+ 
+    html{
+        background-color: gray;
+    }
+    
+    body{
+        background-color: white;
+    }
+    
+    footer{
+        text-align: center;
+        background-color: gray;
+        color: white;
+    }
+    
+            /* DESKTOP ONLY */ 
+            
+    @media only screen and (min-width: 641px){
+       
+        body{
+            max-width: 80%;
+            margin: auto;
+        }
+        
+        nav a{
+            text-decoration: none;
+        }
+    
+        nav li{
+            list-style-type: none;
+            float: left; 
+            width: 11.11%;
+            padding-top: 1%;
+            padding-bottom: 2%;
+        }
+        
+    }
+    
+    @media only screen and (max-width: 641px){
+        
+        footer{
+            -webkit-order: 100;
+            -moz-box-order: 100;
+            order: 100;
+        }
+        
+        .roomDesc, .reserveInstructions{
+            display: none;
+        }
+    }
+    

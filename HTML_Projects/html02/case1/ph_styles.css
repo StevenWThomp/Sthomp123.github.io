@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url('cac_champagne.woff') format('woff'),
+			url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Grunge;
+	src: url('1942.woff') format('woff'),
+			url('1942.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Dobkin;
+	src: url('DobkinPlain.woff') format('woff'),
+			url('DobkinPlain.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author:  Steven Thompson and Josh Bentley
+   Date:   9/20/2018
+   
+   Filename: ph_styles.css
+
+*/
+
+/* Structural Styles */
+
+	html{
+		background-color: hsl(91, 8%, 56%);
+	}		
+	
+	body{
+		font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+		background-color: hsl(58, 31%, 84%);
+	}	
+	
+	header{
+		background-color: black;
+	}
+	
+	p{
+		margin: 0px;
+		padding-top:5px;
+		padding: 25px;
+	}
+	
+	body > p{
+		font-size: 1.1em;
+	}
+	
+	body > footer > address{
+		font-style: normal;
+		font-size: 0.9em;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}	
+		
+/* Navigation Styles */
+
+	nav > ul > li > a:link, nav > ul > li > a:visited{
+		background-color: hsla(0, 0%, 42%, 0.4);
+		color:white;
+		text-decoration: none;
+	}
+	
+	nav > ul > li > a:hover, nav > ul > li > a:active{
+		color: hsla(0, 0%, 100%, 0.7);
+		background-color: hsla(0, 0%, 42%, 0.7);
+		text-decoration: underline;
+	}
+	
+	nav a{
+		font-style: "Trebuchet MS", "Helvetica", "sans-serif";
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+/* Section Styles */
+
+	section.playbill#play1 h1{
+		font-family: Champagne, cursive;
+	}
+	
+	section.playbill#play2 h1{
+		font-family: Grunge, "Times New Roman", Times, serif;
+	}
+	
+	section.playbill#play3 h1{
+		font-family: Impact, Charcoal, sans-serif;
+	}
+	
+	section.playbill#play4 h1{
+		font-family: Dobkin, cursive;
+	}
+	
+	section#play1{
+		background-color: hsl(240, 100%, 88%);
+	}
+	
+	section#play2{
+		background-color: hsl(25, 88%, 73%);
+	}
+	
+	section#play3{
+		background-color: hsl(0, 100%, 75%);
+	}
+	
+	section#play4{
+		background-color: hsl(296, 86%, 86%);
+	}
+	
+	section.playbill h1 {
+		font-size: 3em;
+		font-weight: normal;
+		margin: 0px;
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+	}
+
+/* Description List Styles */
+
+	dt {
+		font-size: 1.3em;
+		font-weight: bold;
+		color: hsla(0, 0%, 0%, .4);
+	}
+	
+	dd {
+		font-size: 1.3em;
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}

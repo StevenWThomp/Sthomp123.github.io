@@ -1,0 +1,143 @@
+﻿@charset "utf-8";
+@import "cw_layout.css";
+
+@font-face{
+	font-family: limelight;
+	src: url("Limelight-Regular.ttf") format("truetype");
+	}
+	
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 3
+   
+   Civil War History Style Sheet
+   Author: Steven Thompson and Josh Bentley
+   Date:   9/25/2018
+   
+   Filename: cw_styles.css
+
+*/
+
+/* Structural Styles */
+
+	html{
+		background-color: rgb(151, 151, 151);
+	}
+	
+	body{
+		font-family: Verdana, Geneva, sans-serif;
+		background-color: rgb(180, 180, 223);
+	}
+	
+	footer{
+		padding-top: 1px;	
+		padding-bottom: 1px;
+		text-align: center;
+		font-size: 0.8em;
+		color:white;
+		background-color:rgb(101, 101, 101);
+	}
+
+/* Body Header Styles */
+
+	body > header{
+		background-color: rgb(97, 97, 211);
+	}
+	
+	body > header > h1{
+		margin: 0px;
+		font-family: limelight, cursive;
+		font-size: 4em;
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+	body > header > h1 > span{
+		color: rgba(255, 255, 255, 0.4);
+	}
+
+	h1, h2{
+		font-weight: normal;
+	}
+
+/* Navigation Styles */
+	nav#mainLinks > ul > li > a:link, nav#mainLinks  > ul > li > a:visited{
+		color: white;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-decoration: none;
+	}
+	
+	nav#mainLinks > ul > li > a:hover, nav#mainLinks > ul > li > a:active{
+		background-color: rgba(51, 51, 51, 0.5);
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+/* Outline Styles */
+	nav#outline h1{
+		text-align: center;	
+	}
+	
+	nav#outline ol{
+		list-style-type:upper-roman;
+		color: rgb(51, 51, 51);
+		font-size: 0.8em;
+	}
+	
+	nav#outline ol ol {
+		list-style-type:upper-alpha;
+	}
+	
+	nav#outline li{
+		line-height: 2em;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	nav#outline > ol li a:link, nav#outline > ol li a:visited{
+		color: rgb(101, 101, 101);
+		text-decoration: none;
+	}
+	
+	nav#outline > ol li a:hover, nav#outline > ol li a:active{
+		color:rgb(97, 97, 211);
+		text-decoration: underline;
+	}
+	
+/* Section Styles */
+
+	section {
+		background-color: rgb(220, 220, 220);
+	}
+	
+	section header h1{
+		font-size: 2.2em;
+		padding-left: 10px;
+	}
+
+/* Article Styles */
+	
+	article h2{
+		font-size: 1.4em;	
+	}
+	
+	article p:first-of-type:first-letter{
+		font-size: 2em;
+		vertical-align: baseline;
+	}
+
+/* Aside Styles */
+
+	aside{
+		font-size: 0.9em;
+	}
+	
+	aside h1{
+		font-size: 1.4em;	
+		text-align: center;
+	}
+	
+	
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/home_greeting" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:src="@drawable/homecat"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:src="@drawable/homedog"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:textColor="@color/colorBlack"
+           android:text="@string/select_slide_show"
+           android:gravity="center"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/select_exit"
+           android:textSize="20sp"
+           android:textColor="@color/colorBlack"
+           android:gravity="center"/>
+    </LinearLayout>
+</FrameLayout>

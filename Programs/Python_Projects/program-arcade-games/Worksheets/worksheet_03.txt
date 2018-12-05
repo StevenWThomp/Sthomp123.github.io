@@ -1,0 +1,175 @@
+     
+     Chapter 03 Worksheet
+
+     
+     
+  1. What is missing from this code? (1 pt)
+     This code is missing a second parentheses after the temperature input
+     temperature = float(input("Temperature: ")
+     if temperature > 90:
+         print("It is hot outside.")
+     else:
+         print("It is not hot out.")
+     This code is missing a second parentheses to close float()
+     
+  2. Write a Python program that will take in a number from the user and print
+     if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
+     just use three if statements.
+
+     number = int(input("Enter a number: "))
+     if number > 0:
+        print("This number is positive")
+    elif number < 0:
+        print("this number is negative")
+    else:
+        print("this number is zero")
+     
+  3. Write a Python program that will take in a number from a user and print
+     out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
+     number = int(input("Enter a number: "))
+     if -10 <= number <= 10:
+        print("Success")
+
+  4. This runs, but there is something wrong. What is it? (1 pt)
+     You get asked for the input before you see the options.
+     user_input = input("A cherry is a: ")
+     print("A. Dessert topping")
+     print("B. Desert topping")
+     if user_input.upper() == "A":
+         print("Correct!")
+     else:
+         print("Incorrect.")
+	C O R R E C T E D
+	print("A. Dessert topping")
+    print("B. Desert topping")
+    user_input = input("A cherry is a: ")
+   if user_input.upper() == "A":
+        print("Correct!")
+    else:
+		print("Incorrect.")
+	
+  
+  
+  5.  There are two things wrong with this code that tests if x is set to a
+     positive value. One prevents it from running, and the other is subtle.
+     Make sure the if statement works no matter what x is set to.
+     Identify both issues. (2 pts)
+     1: there is a == when assigning x
+	 2: X will always be equal to 4. If you want to change what x is set to then you can use an input() statenent.
+     x == 4
+     if x >= 0:
+         print("x is positive.")
+     else:
+         print("x is not positive.")
+     
+  6. What three things are wrong with the following code? (3 pts)
+     1. use a double == in the if statement.
+	 2. you want to use int(input() when trying to enter numbers
+	 3. There is no colon in the if statement.
+     x = input("Enter a number: ")
+     if x = 3
+		 print("You entered 3")
+     
+  7. There are four things wrong with this code. Identify all four issues. (4 pts)
+     
+	 1. There is no double == in the if statement.
+	 2. Else statement is indented.
+	 3. else statement has no colon.
+	 4. the print statement inside the else statement has no indention.
+     
+	 answer = input("What is the name of Dr. Bunsen Honeydew's assistant? ")
+     if a = "Beaker":
+         print("Correct!")
+         else
+         print("Incorrect! It is Beaker.")
+     
+  8. This program doesn't work correctly. What is wrong? (1 pt)
+     You to write it as: if x == "Happy" or x == "Glad":
+	 
+     x = input("How are you today?")
+     if x == "Happy" or "Glad":
+         print("That is good to hear!")
+     
+  9. Look at the code below. Write you best guess here on what it will print.
+     Next, run the code and see if you are correct.
+     Clearly label your guess and the actual answer.
+     Also, if this or any other example results in an error, make sure to
+     state that an error occurred.
+     While you don't need to write an explanation, make sure you understand
+     why the computer prints what it does. Don't get caught flat-footed when
+     you need to know later. (2 pts)
+     My guess: buzz will be printed.
+	 The answer: buzz was printed.
+	 This is because x gets assigned the value 5, the new variables are checking if they are equal to 5. This is why "y" was returned as False
+	 while "z" was returned as True.
+     x = 5
+     y = x == 6
+     z = x == 5
+     print("x=", x)
+     print("y=", y)
+     print("z=", z)
+     if y:
+         print("Fizz")
+     if z:
+         print("Buzz")
+     
+ 10. Look at the code below. Write you best guess on what it will print.
+     Next, run the code and see if you are correct. (2 pts)
+	 My guess: I think it will print numbers in the print statements that correct. If they are incorrect I think it will error.
+     Correct asnwer: It did not print numbers and it did not error. Instead it gave me True and False answers.
+     x = 5
+     y = 10
+     z = 10
+     print(x < y)
+     print(y < z)
+     print(x == 5)
+     print(not x == 5)
+     print(x != 5)
+     print(not x != 5)
+     print(x == "5")
+     print(5 == x + 0.00000000001)
+     print(x == 5 and y == 10)
+     print(x == 5 and y == 5)
+     print(x == 5 or y == 5)
+     
+ 11. Look at the code below. Write you best guess on what it will print.
+     Next, run the code and see if you are correct. (2 pts)
+     My guess: This will give me true and false answers.
+	 Correct Answer: After fixing the error, it gave me true and false answers.
+	 ERROR: The first time I ran it I got a typerror for the line "print(3 < "3")"
+	 I got this error because it is checking if an integer is less than a string.
+     print("3" == "3")
+     print(" 3" == "3")
+     print(3 < 4)
+     print(3 < 10)
+     print("3" < "4")
+     print("3" < "10")
+     print( (2 == 2) == "True" )
+     print( (2 == 2) == True )
+     print(3 < "3")
+     
+
+ 12. What things are wrong with this section of code?
+     The programmer wants to set the money variable according to
+     the initial occupation the user selects. (1 pt)
+    
+	 They need to use == in the if statements
+	 They could also shorten the else if statements by just using elif.
+     print("Welcome to Oregon Trail!")
+
+     print("A. Banker")
+     print("B. Carpenter")
+     print("C. Farmer")
+
+     user_input = input("What is your occupation?")
+
+     if user_input = A:
+         money = 100
+     else if user_input = B:
+         money = 70
+     else if user_input = C:
+         money = 50
+	
+     
+
+     
