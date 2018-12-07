@@ -10,36 +10,84 @@
 	   Author: Steven Thompson
 	   Date:   12-4-2018
 
-	   Filename: index.html
+	   Filename: html03_index.html
 	   -->
 	   <title> HTML03 Projects</title>
 	   <meta charset="utf-8" />
 	   <meta name="viewport" content="width=device-width, initial-scale=1" />
 		 <link href="../../reset.css" rel="stylesheet" type="text/css" />
-	   <link href="../../styles.css" rel="stylesheet" type="text/css"/>
+	   <link href="./html03_styles.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<header>
-			<section id="home">
-	      <a href="../../index.html"> Home </a>
-	    </section>
-			<section id="back">
-	      <a href="../projects_index.html"> Back </a>
-	    </section>
-			</header>
-			<article>
-				<h1> HTML03 links</h1>
-				<nav class= "ch3Links">
-					<ul>
-						<li><a href="./tutorial/pc_home.html">Tutorial Pt 1</a></li>
-						<li><a href="./review/dlr_mornings.html">Review: TODO</a></li>
-						<li><a href="./case1/sp_home.html">Case 1</a></li>
-						<li><a href="./case2/ce_front.html">Case 2</a></li>
-						<li><a href="./case3/ss_dday.html">Case 3</a></li>
-						<li><a href="./case4/pcg_front.html">Case 4</a></li>
-					</ul>
-				</nav>
-			</article>
+			<nav class="navigation">
+				<a href="#" id="navicon"> <img src="../../navicon.jpeg"/></a>
+				<ul>
+						<li><a href="../../index.html"> Home </a></li>
+						<li><a href="../projects_index.html"> Back </a></li>
 
+				</ul>
+			</nav>
+			<h1> HTML03 links</h1>
+			<section>
+
+			</section>
+		</header>
+
+				<!-- Creating a 6 x 2 grid layout to display work -->
+		<main>
+				<div class="grid_container">
+				<!--
+						class label _t marks title col
+					-->
+					<div class="grid_item_t"> <h2> Tutorial </h2></div>
+					<div class="grid_item_t"> <h2> Review </h2></div>
+					<div class="grid_item_t"> <h2> Case1 </h2></div>
+					<div class="grid_item_t"> <h2> Case2 </h2></div>
+					<div class="grid_item_t"> <h2> Case3 </h2></div>
+					<div class="grid_item_t"> <h2> Case4 </h2></div>
+
+					<div class="grid_item">
+						<a href="./tutorial/pc_home.html">
+							<img src="ch3_tutorial.jpeg" class="ch_image">
+						</a>
+				</div>
+				<!-- href="./review/tss_coach.html"
+			<img src="ch3_review.jpeg" class="ch_image"> -->
+				<div class="grid_item">
+					<a href="#">
+						 PLACEHOLDER
+					</a>
+			</div>
+			<div class="grid_item">
+				<a href="./case1/sp_home.html">
+					<img src="ch3_case1.jpeg" class="ch_image">
+				</a>
+			</div>
+			<div class="grid_item">
+				<a href="./case2/ce_front.html">
+					<img src="ch3_case2.jpeg" class="ch_image">
+				</a>
+			</div>
+				<div class="grid_item">
+					<a href="./case3/ss_dday.html">
+						<img src="ch3_case3.jpeg" class="ch_image">
+					</a>
+				</div>
+				<div class="grid_item">
+					<a href="./case4/pcg_front.html">
+						<img src="ch3_case4.jpeg" class="ch_image">
+					</a>
+				</div>
+			</div>
+		</main>
+		<aside class="github">
+			<strong><a href="https://github.com/Sthomp123/html03">
+				Click here to go to the GitHub Repo</a></strong>
+		</aside>
+		<footer>
+			Contact me: <a href="Emailto:sthompson@stcharlessd.org">
+				sthompson@stcharlessd.org</a>
+	 </footer>
 	</body>
 </html>
