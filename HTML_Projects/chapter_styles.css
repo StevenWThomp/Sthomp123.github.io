@@ -14,7 +14,7 @@ body{
   background-color: gray;
 }
 
-body header{
+  main h1{
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ body header{
     display: table;
   }
 
-  body header{
+  main h1{
     font-size: 1.4em;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -117,14 +117,16 @@ body header{
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
     text-decoration: none;
-    color: rgb(170, 80, 10);
+    color: rgb(0, 0, 220);
     background-color: rgb(114, 126, 145);
   }
 
   .navigation a:hover, .navigation:active{
     background-color: pink;
-    transition: .1s;
+    transition: .3s;
   }
 
   .github{
@@ -134,9 +136,13 @@ body header{
     text-decoration: none;
   }
 
-  body header h1{
+  .github a{
+    color: rgb(0, 0, 220);
+  }
+
+  main h1{
     font-size: 2em;
-    padding-top: 20px;
+    padding-top: 2.5%;
     padding-bottom: 20px;
   }
 
