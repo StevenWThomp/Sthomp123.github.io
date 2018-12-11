@@ -4,7 +4,7 @@ html{
   height: 100%;
   background-color: white;
   padding-top: 1%;
-  background-image: url("gray_background.jpeg");
+  background-image: url("../gray_background.jpeg");
   /* Textured gray background stock photo from:
   https://www.publicdomainpictures.net
   */
@@ -33,15 +33,21 @@ a{
     list-style-type: none;
   }
 
-  .html_links ul li{
+.html_links ul li{
     padding-bottom: 1%;
     text-align: center;
     font-size: 2em;
   }
 
-  .html_links ul li a{
+.html_links ul li a{
     text-decoration: none;
   }
+
+/*
+=====================================
+  MOBILE STYLES (max-width: 480px)
+=====================================
+*/
 
 @media only screen and (max-width: 480px){
 
@@ -72,6 +78,12 @@ a{
     text-align: center;
   }
 }
+
+/*
+=====================================
+  DESKTOP STYLES (min-width: 481px)
+=====================================
+*/
 
 @media only screen and (min-width: 481px){
 
