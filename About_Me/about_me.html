@@ -6,21 +6,60 @@
     Page with information about me:
       education
       skills and interests
-      Contacts
+      Contacts (maybe).
    -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="../reset.css" rel="stylesheet" type="text/css" />
+    <link href="./about_me_styles.css" rel="stylesheet" type="text/css" />
     <title> About Me </title>
-
- </head>
+   </head>
 
  <body>
-   
-   <section id="home">
-     <li><a href="../index.html"> Home </a></li>
-   </section>
+   <header>
+     <a id="navicon" href="#"> <img src="../navicon.jpeg"/></a>
+     <nav class="navigation">
+       <ul>
+         <li><a id="home" href="../index.html"> Home </a></li>
+       </ul>
+    </nav>
+    <h1> About me </h1>
+    <p> Click <a href="https://github.com/Sthomp123"> here </a>
+      to view my Github account.
+    <p>
+   </header>
 
+   <div class="content">
+       <table class="education">
+         <caption> My education. </caption>
+         <colgroup>
+           <col class="school">
+           <col class="diploma">
+         </colgroup>
+         <tbody>
+           <tr>
+             <th> Holt High School </th>
+             <td> 2015 - 2019: Diploma</td>
+           </tr>
+           <tr>
+             <th> Lewis and Clark Career Center </th>
+             <td> 2017 - 2019: Certificate </td>
+          </tr>
+        </tbody>
+       </table>
+
+       </aside>
+
+    <article class="skills/interests">
+
+
+     </article>
+  </div>
+
+  <footer>
+    Contact me: <a href="mailto:sthompson@stcharlessd.org">
+      sthompson@stcharlessd.org</a>
+ </footer>
  </body>
 
 </html>
