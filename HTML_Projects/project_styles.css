@@ -4,6 +4,10 @@ html{
   height: 100%;
   background-color: white;
   padding-top: 1%;
+  background-image: url("gray_background.jpeg");
+  /* Textured gray background stock photo from:
+  https://www.publicdomainpictures.net
+  */
 }
 
 body{
@@ -13,8 +17,8 @@ body{
   max-width: 90%;
   margin: auto;
   line-height: 2em;
-
-  background-color: gray;
+  box-shadow: 10px 5px 20px 10px;
+  background-color: rgb(155, 164, 178);
 }
 
 a{
@@ -25,8 +29,7 @@ a{
   list-style-type: none;
 }
 
-
-  .html_links ul{
+.html_links ul{
     list-style-type: none;
   }
 
