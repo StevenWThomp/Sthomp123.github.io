@@ -1,11 +1,99 @@
+@charset "UTF-8";
+
+a{
+  color: rgb(0, 0, 220);
+}
+
+.introduction{
+  text-align: center;
+}
+
 table, th, td{
+  margin: auto;
+  text-align: center;
   border: 1px solid black;
   border-collapse: collapse;
 }
 
+.education caption{
+  text-align: center;
+  font-size: 2.4em;
+}
+
+th, td{
+  font-size: 2em;
+  padding-left: .5%;
+}
+
+
+@media only screen and (max-width: 480px){
+
+  a#navicon{
+    display: block;
+  }
+
+  a#navicon::after{
+    clear: both;
+  }
+
+  .navigation ul{
+    display: none;
+  }
+
+  a#navicon:hover+ul, .navigation ul:hover{
+    display: block;
+  }
+
+  .github{
+    -webkit-order: 99;
+    -moz-box-order: 99;
+    order: 99;
+  }
+
+}
 @media only screen and (min-width: 481px){
 
   a#navicon{
     display: none;
+  }
+
+  .navigation{
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .navigation a{
+    float: right;
+    text-decoration: none;
+    background-color: rgb(114, 126, 145);
+  }
+
+  .navigation a:hover, .navigation:active{
+    background-color: pink;
+    transition: .3s;
+  }
+
+  a#home{
+    font-size: 1.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+
+  .introduction h1{
+    font-size: 2.5em;
+    padding-top: 2%;
+  }
+
+  .introduction p{
+    font-size: 2em;
+  }
+
+  footer{
+    text-align: center;
+    height: 1%;
+    width: 100%;
+    font-size: 1.2em;
   }
 }

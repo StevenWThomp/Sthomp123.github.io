@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html{
-  height: 100%;
+  min-height: 100%;
   padding-top: 1%;
   background-image: url("../gray_background.jpeg")
   /* Textured gray background stock photo from:
@@ -61,7 +61,7 @@ body{
 
   .grid_container{
     display: grid;
-    
+
     vertical-align: center;
   }
 

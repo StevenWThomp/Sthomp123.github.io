@@ -1,26 +1,5 @@
 @charset "UTF-8";
 
-html{
-  height: 100%;
-  background-color: white;
-  padding-top: 1%;
-  background-image: url("../gray_background.jpeg");
-  /* Textured gray background stock photo from:
-  https://www.publicdomainpictures.net
-  */
-}
-
-body{
-  min-height: 75%;
-  min-width: 80%;
-  max-height: 85%;
-  max-width: 90%;
-  margin: auto;
-  line-height: 2.5em;
-  box-shadow: 10px 5px 20px 10px;
-  background-color: rgb(155, 164, 178);
-}
-
 a{
   color: rgb(0, 0, 220);
 }
@@ -104,7 +83,6 @@ a{
   }
 
   a#home{
-    float: right;
     font-size: 1.5em;
     padding-left: 15px;
     padding-right: 15px;

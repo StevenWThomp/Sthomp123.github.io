@@ -1,22 +1,4 @@
-html{
-  height: 100%;
-  padding-top: 1%;
-  background-image: url("gray_background.jpeg");
-  /* Textured gray background stock photo from:
-  https://www.publicdomainpictures.net
-  */
-}
-
-body{
-  margin: auto;
-  min-height: 75%;
-  min-width: 80%;
-  max-height: 85%;
-  max-width: 90%;
-  line-height: 3em;
-  box-shadow: 10px 5px 20px 10px;
-  background-color: rgb(155, 164, 178);
-}
+@charset "UTF-8";
 
 body header{
   text-align: center;

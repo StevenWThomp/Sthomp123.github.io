@@ -31,10 +31,28 @@ li, main, nav, nav a, section, ul {
 
 /* Set the default page element styles */
 
-body {
-  line-height: 1.2em;
+html{
+  min-height: 100%;
+  padding-top: 1%;
+  background-image: url("./gray_background.jpeg");
+  /* Textured gray background stock photo from:
+  https://www.publicdomainpictures.net
+  */
+}
+body{
+  margin: auto;
+  min-height: 75%;
+  min-width: 80%;
+  max-height: 90%;
+  max-width: 90%;
+  line-height: 3em;
+  box-shadow: 10px 5px 20px 10px;
+  background-color: rgb(155, 164, 178);
 }
 
+a{
+  color: rgb(0, 0, 220);
+}
 ul, ol {
   list-style: none;
 }
