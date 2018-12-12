@@ -80,9 +80,6 @@ a{
     float: right;
     text-decoration: none;
     background-color: rgb(114, 126, 145);
-  }
-
-  a#home{
     font-size: 1.5em;
     padding-left: 15px;
     padding-right: 15px;
