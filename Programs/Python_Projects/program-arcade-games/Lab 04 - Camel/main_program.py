@@ -34,8 +34,8 @@ while done == False:
 #this line allows you to select a choice from above.
     user_choice = input("Your choice? ")
  #If you select Q then the game ends.
- if user_choice.upper() == "Q":
-        done = True
+    if user_choice.upper() == "Q":
+            done = True
 
 #If You select E then it will show you all the necessary stats to get you across the desert safely
     elif user_choice.upper() == "E":
