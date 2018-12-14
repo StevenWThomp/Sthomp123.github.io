@@ -9,16 +9,6 @@ html{
   */
 }
 
-body{
-  margin: auto;
-  min-height: 75%;
-  min-width: 80%;
-  max-height: 85%;
-  max-width: 90%;
-  box-shadow: 10px 5px 20px 10px;
-  background-color: rgb(155, 164, 178);
-}
-
   main h1{
   text-align: center;
 }
@@ -79,13 +69,6 @@ body{
     -moz-box-order: 99;
     -webkit-order: 99;
     order: 99;
-    text-align: center;
-  }
-
-  footer{
-    -moz-box-order: 100;
-    -webkit-order: 100;
-    order: 100;
     text-align: center;
   }
 
@@ -158,13 +141,6 @@ body{
     width: 100%;
     height: auto;
     margin: auto;
-  }
-
-  footer{
-    text-align: center;
-    float: bottom;
-    padding-top: 50px;
-    font-size: 1.2em;
   }
 
 }

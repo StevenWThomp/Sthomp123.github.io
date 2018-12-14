@@ -40,8 +40,9 @@ html{
   */
 }
 body{
+  position: relative;
   margin: auto;
-  min-height: 100%;
+  min-height: 800px;
   min-width: 85%;
   max-height: 100%;
   max-width: 90%;
@@ -49,6 +50,15 @@ body{
   box-shadow: 10px 5px 20px 10px;
   background-color: rgb(155, 164, 178);
 }
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    line-height: normal;
+    text-align: center;
+    font-size: 2vm;
+  }
 
 a{
   color: rgb(0, 0, 220);

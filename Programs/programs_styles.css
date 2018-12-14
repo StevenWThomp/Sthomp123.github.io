@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
-body{
-  position: relative;
-  min-height: 500px;
-}
+
 a{
   color: rgb(0, 0, 220);
   text-decoration: none;
@@ -81,6 +78,10 @@ header p{
     clear: both;
   }
 
+  body header p{
+    font-size: 1em;
+  }
+
   .navigation ul{
       display: none;
   }
@@ -124,15 +125,4 @@ header p{
     background-color: pink;
     transition: .3s;
   }
-
-  footer{
-      line-height: normal;
-      position: absolute;
-      top: 88%;
-      left: 0px;
-
-      text-align: left;
-      font-size: 2vm;
-    }
-
 }

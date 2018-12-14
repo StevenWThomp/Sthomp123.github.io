@@ -52,10 +52,6 @@ a{
     font-size: .8em;
   }
 
-  footer{
-    padding-top: 10px;
-    text-align: center;
-  }
 }
 
 /*
@@ -106,10 +102,5 @@ a{
     vertical-align: center;
   }
 
-  footer{
-    padding-top: .5%;
-    text-align: center;
-    font-size: 1.6em;
-  }
 
 }
