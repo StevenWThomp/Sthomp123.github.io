@@ -56,7 +56,7 @@ footer{
     clear: both;
   }
 
-  .navigation ul{
+  .navigation ul, .introduction{
     display: none;
   }
 
@@ -84,7 +84,7 @@ footer{
 
 @media only screen and (min-width: 481px){
 
-  a#navicon{
+  a#navicon, .mobile_intro{
     display: none;
   }
 
