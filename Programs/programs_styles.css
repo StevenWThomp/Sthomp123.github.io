@@ -62,6 +62,9 @@ header p{
   clear: both;
 }
 
+footer{
+  padding-top: 400px;
+}
 /*
 =====================================
   MOBILE STYLES (max-width: 480px)

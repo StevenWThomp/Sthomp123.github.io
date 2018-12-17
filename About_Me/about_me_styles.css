@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+/*
+=====================================
+  BASE STYLES. APPLIED TO ALL DEVICES
+=====================================
+*/
+
 a{
   color: rgb(0, 0, 220);
 }
 
 .introduction{
   text-align: center;
+
 }
 
 table, th, td{
@@ -20,11 +27,20 @@ table, th, td{
   font-size: 2.4em;
 }
 
+.education{
+  max-width: 80%;
+}
+
 th, td{
   font-size: 2em;
   padding-left: .5%;
 }
 
+/*
+=====================================
+  MOBILE STYLES (max-width: 480px)
+=====================================
+*/
 
 @media only screen and (max-width: 480px){
 
@@ -50,7 +66,18 @@ th, td{
     order: 99;
   }
 
+  .education th, .education td{
+    font-size: 1.2em;
+  }
+
 }
+
+/*
+=====================================
+  DESKTOP STYLES (min-width: 481px)
+=====================================
+*/
+
 @media only screen and (min-width: 481px){
 
   a#navicon{
@@ -81,13 +108,8 @@ th, td{
     padding-top: 10px;
   }
 
-  .introduction h1{
-    font-size: 2.5em;
+  .introduction{
+    font-size: 1.5em;
     padding-top: 2%;
   }
-
-  .introduction p{
-    font-size: 2em;
-  }
-
 }

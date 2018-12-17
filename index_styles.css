@@ -16,6 +16,8 @@ body header p{
 
 .links{
   font-size: 2em;
+  line-height: 2.5em;
+
 }
 
 /*
@@ -27,6 +29,11 @@ body header p{
 @media only screen and (max-width: 480px){
   body header p{
     display: none;
+  }
+
+  .links{
+    padding-top: 40%;
+    font-size: 1.8em;
   }
 }
 
@@ -41,8 +48,6 @@ body header p{
   .links{
     display: block;
     margin: auto;
-    padding-top: 1%;
-    vertical-align: center;
     text-decoration: none;
   }
 
