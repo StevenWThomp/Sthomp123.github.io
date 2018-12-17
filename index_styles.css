@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/*
+=====================================
+  BASE STYLES. APPLIED TO ALL DEVICES
+=====================================
+*/
+
 body header{
   text-align: center;
 
@@ -17,7 +23,10 @@ body header p{
 .links{
   font-size: 2em;
   line-height: 2.5em;
+}
 
+footer{
+  padding-top: 10%;
 }
 
 /*

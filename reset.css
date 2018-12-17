@@ -54,7 +54,8 @@ body{
 footer{
   width: 100%;
   text-align: center;
-  padding-bottom: 1%;
+  line-height: normal;
+  float: right;
     /**position: absolute;
     bottom: 0px;
     right: 0px;

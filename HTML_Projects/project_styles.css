@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/** STYLESHEET FOR INDEX PAGE OF HTML CHAPTERS **/
+
+/*
+=====================================
+  BASE STYLES. APPLIED TO ALL DEVICES
+=====================================
+*/
+
 a{
   color: rgb(0, 0, 220);
 }
@@ -9,19 +17,22 @@ a{
 }
 
 .html_links ul{
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 
 .html_links ul li{
-    padding-bottom: 1%;
-    text-align: center;
-    font-size: 2em;
-  }
+  padding-bottom: 1%;
+  text-align: center;
+  font-size: 2em;
+}
 
 .html_links ul li a{
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
+footer{
+  padding-top: 1%;
+}
 /*
 =====================================
   MOBILE STYLES (max-width: 480px)

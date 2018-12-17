@@ -36,6 +36,10 @@ th, td{
   padding-left: .5%;
 }
 
+footer{
+  padding-top: 10%;
+}
+
 /*
 =====================================
   MOBILE STYLES (max-width: 480px)
